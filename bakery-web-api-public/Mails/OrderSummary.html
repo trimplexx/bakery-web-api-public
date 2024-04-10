@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            color: #333;
+            border: 1px solid black;
+            border-collapse: separate;
+            border-spacing: 10px;
+            width: 100%;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 14px;
+        }
+    </style>
+</head>
+<body>
+<p style='font-family: Arial, sans-serif; color: #333; font-size: 20px;'>Drogi użytkowniku,</p>
+<p style='font-family: Arial, sans-serif; color: #333; font-size: 16px;'>zamówienie będzie dostępne do odbioru w dniu:
+    <span style='font-weight: bold;'>{OrderDate}</span>
+    w godzinach otwarcia piekarni (7:00 - 16:00). Wystarczy, że podasz numer telefonu, na który wykonałeś zamówienie:
+    <span style='font-weight: bold;'>{Phone}</span>.</p>
+<p style='font-family: Arial, sans-serif; color: #333; font-size: 16px;'>Zamówione produkty:</p>
+<table>
+    <tr>
+        <th>Nazwa produktu</th>
+        <th>Ilość</th>
+        <th>Cena</th>
+    </tr>
+    {Products}
+    <tr>
+        <td colspan='2' style='font-weight: bold;'>Całkowity koszt:</td>
+        <td>{TotalCost} zł</td>
+    </tr>
+</table>
+<p style='font-family: Arial, sans-serif; color: #333; font-size: 16px;'>Dziękujemy za złożenie zamówienia w naszej
+    piekarni. Cieszymy się, że wybrałeś nasze produkty!</p>
+<p style='font-family: Arial, sans-serif; color: #333; font-size: 16px;'>Pozdrawiamy,<br/>zespół Trzeba Chleba</p>
+</body>
+</html>
